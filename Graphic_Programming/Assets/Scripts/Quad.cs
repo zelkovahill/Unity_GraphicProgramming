@@ -56,6 +56,7 @@ namespace ProceduralModeling
             mesh.normals = normals;
             mesh.triangles = triangles;
 
+            // 만들어진 매쉬의 경계 영역 (bounds)을 계산한다 (culling에 필요)
             mesh.RecalculateBounds();
 
             return mesh;
